@@ -1445,13 +1445,27 @@ img {
 @media screen and (min-width: 1200px) {
   .portfolio__item {
     margin-bottom: 30px;
-    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio__item {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .portfolio__item:nth-child(2n + 1) {
-    margin-right: 30px;
+  .portfolio__item:not(:last-child) {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
